@@ -1,0 +1,80 @@
+/* Colours */
+
+/* Background colour: #f9f9f9 */
+/* Dark Blue: #003479 */
+/* Lightblue: #0d3e80 */
+/* Dark green: #39823c */
+/* Light green: #dff0d8 */
+/* Red: #d43045 */
+
+/* Font Styles */
+
+html {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* Background Colours etc. */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #0d3e80;
+  box-shadow: 0px 2px 4px darkgrey;
+
+  position: fixed;
+  z-index: 5;
+  max-width: inherit;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border: 1px solid blue;
+}
+
+header img {
+  max-width: 10rem;
+  border: 1px solid red;
+}
+
+header .header-items {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border: 1px solid red;
+}
+
+header .header-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+header .header-item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.btn-red {
+  padding: 0.5rem;
+  background-color: #d43045;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #f9f9f9;
+}
