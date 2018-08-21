@@ -11,18 +11,18 @@
 
 @font-face {
     font-family: VisbyCF;
-    src: url("./resources/font/VisbyCF-Bold.woff2");
+    src: url("../font/VisbyCF-Bold.woff2");
 }
 
 @font-face {
     font-family: VisbyCF;
-    src: url("./resources/font/VisbyCF-Heavy.woff2");
+    src: url("../font/VisbyCF-Heavy.woff2");
     font-weight: bold;
 }
 
 html {
   font-family: 'VisbyCF', Arial, sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 300;
 }
 
@@ -39,7 +39,7 @@ b { font-weight: 700; }
 
 .text-white-large {
   color: white;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .text-strikethrough { text-decoration: line-through;}
@@ -116,8 +116,9 @@ header .header-item-text {
   justify-content: space-around;
 }
 
-.btn-red {
-  padding: 0.5rem 1rem;
+header button {
+  margin-left: 1rem;
+  padding: 0.7rem 2.5rem;
   background-color: #d43045;
   color: #f9f9f9;
 }
@@ -190,18 +191,45 @@ header .header-item-text {
 }
 
 .main-body-content-profile-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  color: #f9f9f9;
+}
+
+.main-body-content-profile-image-icon {
+  height: 85%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #f9f9f9;
+}
+
+.main-body-content-profile-image-button {
+  height: 15%;
+  width: 100%;
   border: 1px solid red;
   display: flex;
   flex-direction: column;
-  width: 33%;
+  justify-content: flex-end;
+}
+
+.main-body-content-profile-image-button button {
+  height: 100%;
+  background-color: #003479;
+  color: #f9f9f9;
 }
 
 .main-body-content-profile-info {
   border: 1px solid red;
   display: flex;
   flex-direction: column;
-  width: 67%;
-  margin-top: 4rem;
+  width: 75%;
+  margin-top: 3.8rem;
 }
 
 .main-body-content-profile-info-update {
@@ -224,27 +252,29 @@ header .header-item-text {
   border: 1px solid red;
   display: flex;
   flex-direction: column;
+  padding: 1rem 0;
+}
+
+.main-body-content-profile-info-address p {
+  padding: 0.2rem 0;
 }
 
 .main-body-content-profile-info-contact {
   border: 1px solid red;
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
+  padding: 1rem 0;
 }
 
-.main-body-content-profile-info-contact-email {
+.main-body-content-profile-info-contact-item {
   border: 1px solid red;
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 
-.main-body-content-profile-info-contact-phone {
-  border: 1px solid red;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+.main-body-content-profile-info-contact-item p {
+  padding: 0.2rem 0;
 }
 
 /* MAIN-BODY-CONTENT-EVENTS */
@@ -272,6 +302,10 @@ header .header-item-text {
   padding: 3rem 0;
 }
 
+.main-body-content-event-countdown p {
+  padding: 0.3rem 0;
+}
+
 .main-body-content-event-info {
   border: 1px solid red;
   display: flex;
@@ -290,7 +324,11 @@ header .header-item-text {
 
 .main-body-content-event-info-links {
   border: 1px solid red;
-  padding: 0.3rem;
+  padding: 1rem 0.3rem;
+}
+
+.main-body-content-event-info-links a {
+  padding-right: 2rem;
 }
 
 .main-body-content-event-info-edit {
@@ -314,7 +352,7 @@ header .header-item-text {
 
 .main-body-content-event-info-edit button {
   border: 1px solid red;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 2rem;
   background-color: #39823c;
   color: #f9f9f9;
   margin-left: auto;
@@ -342,6 +380,18 @@ header .header-item-text {
 
 .main-body-content-purchases-item img {
   width: 100%;
+}
+
+.main-body-content-purchases-item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+.main-body-content-purchases-item-text p {
+  padding: 1rem 0;
+  border: 1px solid blue;
 }
 
 .main-body-content-purchases-item-options {
