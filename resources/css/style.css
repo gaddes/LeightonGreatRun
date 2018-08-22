@@ -7,6 +7,22 @@
 /* Light green: #dff0d8 */
 /* Red: #d43045 */
 
+:root {
+  --color-background: #f9f9f9;
+  --color-darkblue: #003479;
+  --color-lightblue: #0d3e80;
+  --color-darkgreen: #39823c;
+  --color-lightgreen: #dff0d8;
+  --color-red: #d43045;
+}
+
+/* Media Queries - sizes below from Bootstrap */
+
+/* xs (for phones - screens less than 768px wide) */
+/* sm (for tablets - screens equal to or greater than 768px wide) */
+/* md (for small laptops - screens equal to or greater than 992px wide) */
+/* lg (for laptops and desktops - screens equal to or greater than 1200px wide) */
+
 /* Font Styles */
 
 @font-face {
@@ -27,7 +43,7 @@ html {
 }
 
 a {
-  color: #003479;
+  color: var(--color-darkblue);
   text-decoration: underline;
 }
 
@@ -35,24 +51,24 @@ b { font-weight: 700; }
 
 .bold { font-weight: 700; }
 
-.text-white { color: white; }
+.text-white { color: var(--color-background); }
 
 .text-white-large {
-  color: white;
+  color: var(--color-background);
   font-size: 3rem;
 }
 
 .text-strikethrough { text-decoration: line-through;}
 
 .blue-line-top {
-  color: #f9f9f9;
-  border-top: 2px solid #003479;
+  color: var(--color-background);
+  border-top: 2px solid var(--color-darkblue);
 }
 
 /* Background Colours etc. */
 
 .container-960px {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -119,14 +135,14 @@ header .header-item-text {
 header button {
   margin-left: 1rem;
   padding: 0.7rem 2.5rem;
-  background-color: #d43045;
-  color: #f9f9f9;
+  background-color: var(--color-red);
+  color: var(--color-background);
 }
 
 /* MAIN-CONTAINER */
 
 .main-banner {
-  background-color: #003479;
+  background-color: var(--color-darkblue);
   height: 8rem;
   margin-top: 4rem;
 }
@@ -145,7 +161,11 @@ header button {
 
   border: 1px solid red;
   border-bottom: 1px solid grey;
-  background-color: #f9f9f9;
+  background-color: var(--color-background);
+}
+
+@media only screen and (max-width: 992px) {
+  .main-body-sidebar { display: none; }
 }
 
 .main-body-sidebar button {
@@ -164,7 +184,7 @@ header button {
 
 .sidebar-heading:hover {
   background-color: #E5E5E5;
-  color: #003479;
+  color: var(--color-darkblue);
 }
 
 .sidebar-heading-text {
@@ -299,7 +319,7 @@ input:checked ~ .collapsible-menu-icon {
   justify-content: space-between;
   align-items: center;
   width: 25%;
-  color: #f9f9f9;
+  color: var(--color-background);
 }
 
 .main-body-content-profile-image-icon {
@@ -309,7 +329,7 @@ input:checked ~ .collapsible-menu-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #f9f9f9;
+  border: 2px solid var(--color-background);
 }
 
 .main-body-content-profile-image-button {
@@ -323,8 +343,8 @@ input:checked ~ .collapsible-menu-icon {
 
 .main-body-content-profile-image-button button {
   height: 100%;
-  background-color: #003479;
-  color: #f9f9f9;
+  background-color: var(--color-darkblue);
+  color: var(--color-background);
 }
 
 .main-body-content-profile-info {
@@ -345,9 +365,9 @@ input:checked ~ .collapsible-menu-icon {
 }
 
 .main-body-content-profile-info-update button {
-  border: 2px solid #f9f9f9;
-  background-color: #003479;
-  color: #f9f9f9;
+  border: 2px solid var(--color-background);
+  background-color: var(--color-darkblue);
+  color: var(--color-background);
   padding: 0.5rem 2rem;
 }
 
@@ -401,7 +421,7 @@ input:checked ~ .collapsible-menu-icon {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #003479;
+  background-color: var(--color-darkblue);
   padding: 3rem 0;
 }
 
@@ -448,16 +468,16 @@ input:checked ~ .collapsible-menu-icon {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #dff0d8;
-  border: 2px solid #39823c;
+  background-color: var(--color-lightgreen);
+  border: 2px solid var(--color-darkgreen);
   padding: 0.5rem;
 }
 
 .main-body-content-event-info-edit button {
   border: 1px solid red;
   padding: 0.5rem 2rem;
-  background-color: #39823c;
-  color: #f9f9f9;
+  background-color: var(--color-darkgreen);
+  color: var(--color-background);
   margin-left: auto;
 }
 
@@ -468,7 +488,7 @@ input:checked ~ .collapsible-menu-icon {
   flex-direction: row;
   justify-content: center;
   border: 1px solid red;
-  border-bottom: 2px solid #003479;
+  border-bottom: 2px solid var(--color-darkblue);
   padding: 1rem;
 }
 
@@ -519,10 +539,10 @@ input:checked ~ .collapsible-menu-icon {
 }
 
 .main-body-content-purchases-item-purchase button {
-  color: #0d3e80;
+  color: var(--color-lightblue);
   font-weight: 700;
   flex-grow: 1;
-  border: 2px solid #0d3e80;
+  border: 2px solid var(--color-lightblue);
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
 }
@@ -533,7 +553,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #003479;
+  background-color: var(--color-darkblue);
 
   position: fixed;
   z-index: 5;
