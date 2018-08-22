@@ -148,12 +148,21 @@ header button {
   background-color: #f9f9f9;
 }
 
+.main-body-sidebar button {
+  width: 100%;
+}
+
 .sidebar-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 2rem 0.5rem 2rem;
   border: 1px solid red;
+  transition: 0.4s;
+}
+
+.sidebar-heading:hover {
+  background-color: #E5E5E5;
 }
 
 .sidebar-heading-text {
