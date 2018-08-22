@@ -164,6 +164,7 @@ header button {
 
 .sidebar-heading:hover {
   background-color: #E5E5E5;
+  color: #003479;
 }
 
 .sidebar-heading-text {
@@ -171,77 +172,92 @@ header button {
   align-items: center;
 }
 
+.sidebar-heading-text-title {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
 .sidebar-heading-icon {
   padding-right: 1rem;
   border: 1px solid red;
 }
 
-.sidebar-heading-icon-expand {
-  padding-left: 1rem;
-  border: 1px solid red;
-  margin-right: 0;
-}
-
-/* Collapsible Menu */
+/* COLLAPSIBLE-MENU-HEADING-START */
 
 .collapsible-menu label {
-  display: block;
   cursor: pointer;
-  /* background: url(../img/menu-down.png) no-repeat right center; */
-  padding: 0.7rem 5rem 0.7rem 0rem;
+  padding: 0.7rem 0.7rem 0.7rem 0rem;
   border: 1px solid red;
-  background-color: none;
 }
 
-#label-four {
-  padding: 0rem;
+.collapsible-menu .label-no-padding {
+  padding: 0;
 }
 
-input#menu {
-  /* display: none; */
-}
-
-input:checked +label {
-  transform: rotate(180deg);
-}
-
-input:checked ~ .menu-content {
-  max-height: 100%;
-}
-
-.menu-content {
-  max-height: 0;
+.collapsible-menu-content {
+  max-height: 0; /* Menu hidden by default */
   overflow: hidden;
+}
+
+.collapsible-menu-content ul {
+  /* padding: 1rem 0; */
+}
+
+.collapsible-menu-content li {
+  padding: 1rem 0 1rem 6.2rem;
+  transition: 0.4s;
+  cursor: pointer;
   border: 1px solid blue;
 }
 
-/* Collapsible-menu-TWO */
+.collapsible-menu-content li:hover {
+  background-color: #E5E5E5;
+}
 
-/* INPUT-TEST-START */
+.collapsible-menu-content a {
+  text-decoration: none;
+  color: darkgrey;
+  border: 1px solid red;
+}
+
+.collapsible-menu-content a:hover {
+  color: black;
+}
+
+input#menu, input#menu-two, input#menu-three, input#menu-four {
+  display: none; /* Hide checkbox from user */
+}
+
+input:checked +label {
+  transform: rotate(180deg); /* Rotate icon when heading is clicked. */
+}
+
+input:checked ~ .collapsible-menu-content {
+  max-height: 100%; /* Show dropdown when heading is clicked. */
+}
 
 .collapsible-menu .sidebar-heading {
-  /* width: 100%; */
-  border: 3px solid green;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 2rem 0.5rem 2rem;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   transition: 0.4s;
   cursor: pointer;
 }
 
-input#menu-three {
-  display: none;
-}
+/* COLLAPSIBLE-MENU-HEADING-END */
 
-/* INPUT-TEST-END */
+/* COLLAPSIBLE-MENU-ITEMS-START */
+/* COLLAPSIBLE-MENU-ITEMS-END */
 
 input:checked ~ .sidebar-heading .collapsible-menu-icon {
   transform: rotate(180deg);
 }
 
 .collapsible-menu .sidebar-heading .sidebar-heading-text {
+  width: 100%;
   border: 1px solid lightblue;
 }
 

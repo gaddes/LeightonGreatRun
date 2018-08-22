@@ -50,71 +50,100 @@
         <div class="main-body-sidebar">
           <button class="sidebar-heading">
             <div class="sidebar-heading-text">
-              <i class="material-icons sidebar-heading-icon">person</i>
+              <label for="menu" class="label-no-padding">
+                <i class="material-icons sidebar-heading-icon">person</i>
+              </label>
               <p class="bold">Messages</p>
             </div>
           </button>
 
-          <button class="sidebar-heading">
-            <div class="sidebar-heading-text">
-              <i class="material-icons sidebar-heading-icon">shopping_cart</i>
-              <p class="bold">Your Account</p>
-            </div>
-            <i class="material-icons sidebar-heading-icon-expand">expand_more</i>
-          </button>
-          <div class="sidebar-heading-dropdown">
-            <p>Dashboard</p>
-            <p>Account Details</p>
-            <p>Security Settings</p>
-            <p>Contact Preferences</p>
-            <p>Social Accounts</p>
-            <p>Child Details</p>
-          </div>
+          <!-- Handy tutorial for collapsible lists in CSS only - https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390 -->
 
+          <div class="collapsible-menu">
+            <input type="checkbox" id="menu">
+            <button type="checkbox" class="sidebar-heading" for="menu" id="menu">
+              <div class="sidebar-heading-text">
+                <label for="menu" class="label-no-padding">
+                  <i class="material-icons sidebar-heading-icon">shopping_cart</i>
+                </label>
+                <label for="menu" class="bold sidebar-heading-text-title">Your Account</label>
+              </div>
+              <label class="collapsible-menu-icon" for="menu"></label>
+            </button>
+            <div class="collapsible-menu-content">
+              <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Account Details</a></li>
+                <li><a href="#">Security Settings</a></li>
+                <li><a href="#">Contact Preferences</a></li>
+                <li><a href="#">Social Accounts</a></li>
+                <li><a href="#">Child Details</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="collapsible-menu">
+            <input type="checkbox" id="menu-two">
+            <button type="checkbox" class="sidebar-heading" for="menu-two" id="menu-two">
+              <div class="sidebar-heading-text">
+                <label for="menu-two" class="label-no-padding">
+                  <i class="material-icons sidebar-heading-icon">shopping_cart</i>
+                </label>
+                <label for="menu-two" class="bold sidebar-heading-text-title">Events</label>
+              </div>
+              <label class="collapsible-menu-icon" for="menu-two"></label>
+            </button>
+            <div class="collapsible-menu-content">
+              <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Ipsum</a></li>
+                <li><a href="#">Dolor</a></li>
+                <li><a href="#">Sit</a></li>
+                <li><a href="#">Amet</a></li>
+              </ul>
+            </div>
+          </div>
           <div class="collapsible-menu">
             <input type="checkbox" id="menu-three">
             <button type="checkbox" class="sidebar-heading" for="menu-three" id="menu-three">
               <div class="sidebar-heading-text">
-                <label for="menu-three" id="label-four">
+                <label for="menu-three" class="label-no-padding">
                   <i class="material-icons sidebar-heading-icon">shopping_cart</i>
                 </label>
-                <label for="menu-three" class="bold" id="label-three">Your Account</label>
+                <label for="menu-three" class="bold sidebar-heading-text-title">Orders</label>
               </div>
-              <label class="collapsible-menu-icon" for="menu-three" id="label-three"></label>
+              <label class="collapsible-menu-icon" for="menu-three"></label>
             </button>
-            <div class="menu-content">
+            <div class="collapsible-menu-content">
               <ul>
-                <li><a href="#"></a>Dashboard</li>
-                <li><a href="#"></a>Account Details</li>
-                <li><a href="#"></a>Security Settings</li>
-                <li><a href="#"></a>Contact Preferences</li>
-                <li><a href="#"></a>Social Accounts</li>
-                <li><a href="#"></a>Child Details</li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Ipsum</a></li>
+                <li><a href="#">Dolor</a></li>
+                <li><a href="#">Sit</a></li>
+                <li><a href="#">Amet</a></li>
               </ul>
             </div>
           </div>
-
-          <button class="sidebar-heading">
-            <div class="sidebar-heading-text">
-              <i class="material-icons sidebar-heading-icon">person</i>
-              <p class="bold">Events</p>
+          <div class="collapsible-menu">
+            <input type="checkbox" id="menu-four">
+            <button type="checkbox" class="sidebar-heading" for="menu-four" id="menu-four">
+              <div class="sidebar-heading-text">
+                <label for="menu-four" class="label-no-padding">
+                  <i class="material-icons sidebar-heading-icon">shopping_cart</i>
+                </label>
+                <label for="menu-four" class="bold sidebar-heading-text-title">Help & Support</label>
+              </div>
+              <label class="collapsible-menu-icon" for="menu-four"></label>
+            </button>
+            <div class="collapsible-menu-content">
+              <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Ipsum</a></li>
+                <li><a href="#">Dolor</a></li>
+                <li><a href="#">Sit</a></li>
+                <li><a href="#">Amet</a></li>
+              </ul>
             </div>
-            <i class="material-icons sidebar-heading-icon-expand">expand_more</i>
-          </button>
-          <button class="sidebar-heading">
-            <div class="sidebar-heading-text">
-              <i class="material-icons sidebar-heading-icon">person</i>
-              <p class="bold">Orders</p>
-            </div>
-            <i class="material-icons sidebar-heading-icon-expand">expand_more</i>
-          </button>
-          <button class="sidebar-heading">
-            <div class="sidebar-heading-text">
-              <i class="material-icons sidebar-heading-icon">info</i>
-              <p class="bold">Help & Support</p>
-            </div>
-            <i class="material-icons sidebar-heading-icon-expand">expand_more</i>
-          </button>
+          </div>
         </div>
 
         <!-- MAIN-BODY-CONTENT -->
