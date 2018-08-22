@@ -182,6 +182,83 @@ header button {
   margin-right: 0;
 }
 
+/* Collapsible Menu */
+
+.collapsible-menu label {
+  display: block;
+  cursor: pointer;
+  /* background: url(../img/menu-down.png) no-repeat right center; */
+  padding: 0.7rem 5rem 0.7rem 0rem;
+  border: 1px solid red;
+  background-color: none;
+}
+
+#label-four {
+  padding: 0rem;
+}
+
+input#menu {
+  /* display: none; */
+}
+
+input:checked +label {
+  transform: rotate(180deg);
+}
+
+input:checked ~ .menu-content {
+  max-height: 100%;
+}
+
+.menu-content {
+  max-height: 0;
+  overflow: hidden;
+  border: 1px solid blue;
+}
+
+/* Collapsible-menu-TWO */
+
+/* INPUT-TEST-START */
+
+.collapsible-menu .sidebar-heading {
+  /* width: 100%; */
+  border: 3px solid green;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  /* border: 1px solid red; */
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+input#menu-three {
+  display: none;
+}
+
+/* INPUT-TEST-END */
+
+input:checked ~ .sidebar-heading .collapsible-menu-icon {
+  transform: rotate(180deg);
+}
+
+.collapsible-menu .sidebar-heading .sidebar-heading-text {
+  border: 1px solid lightblue;
+}
+
+.collapsible-menu .collapsible-menu-icon {
+  background: url(../img/menu-down.png) no-repeat center;
+  background-size: 1.5rem;
+  padding: 1rem;
+  border: 1px solid red;
+  transition: 0.4s;
+}
+
+/* button:clicked */
+input:checked ~ .collapsible-menu-icon {
+  /* background-image: url(../img/menu-up.png); */
+  transform: rotate(180deg);
+}
+
 /* MAIN-BODY-CONTENT */
 
 .main-body-content {
