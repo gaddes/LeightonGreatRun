@@ -396,7 +396,7 @@ input:checked ~ .collapsible-menu-icon {
 @media only screen and (max-width: 992px) {
   .main-body-content-profile-info {
     margin-top: 0rem;
-    padding: 1rem 0rem 1rem 0.5rem;
+    padding: 0rem 0rem 0rem 0.5rem;
     width: 70%;
   }
 }
@@ -431,10 +431,8 @@ input:checked ~ .collapsible-menu-icon {
 }
 
 @media only screen and (max-width: 992px) {
-  .main-body-content-profile-info-update button {
-    display: block;
-    width: 100%;
-    margin-top: 0.5rem;
+  .main-body-content-profile-info-update #update-button-desktop {
+    display: none;
   }
 }
 
@@ -465,6 +463,19 @@ input:checked ~ .collapsible-menu-icon {
 
 .main-body-content-profile-info-contact-item p {
   padding: 0.2rem 0;
+}
+
+.main-body-content-profile-info-update #update-button-tablet {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .main-body-content-profile-info-update #update-button-tablet {
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+    border: none;
+  }
 }
 
 /* MAIN-BODY-CONTENT-EVENTS */
