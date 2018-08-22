@@ -83,7 +83,6 @@ b { font-weight: 700; }
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  border: 1px solid green;
 }
 
 @media only screen and (max-width: 992px) {
@@ -107,7 +106,6 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  border: 1px solid blue;
 }
 
 .container-960px-header {
@@ -115,7 +113,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid green;
   background-color: var(--color-background);
 }
 
@@ -125,14 +122,12 @@ header {
 
 header img {
   max-width: 10rem;
-  border: 1px solid red;
 }
 
 header .header-items {
   display: flex;
   align-items: center;
   padding: 0.5rem;
-  border: 1px solid red;
 }
 
 header .header-item {
@@ -184,7 +179,6 @@ header button {
   width: 33%;
   margin: 0rem 2rem;
 
-  border: 1px solid red;
   border-bottom: 1px solid grey;
   background-color: var(--color-background);
 }
@@ -204,7 +198,6 @@ header button {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 2rem 0.5rem 2rem;
-  border: 1px solid red;
   transition: 0.4s;
   cursor: pointer;
 }
@@ -227,7 +220,6 @@ header button {
 
 .sidebar-heading-icon {
   padding-right: 1rem;
-  border: 1px solid red;
 }
 
 /* COLLAPSIBLE-MENU-HEADING-START */
@@ -235,7 +227,6 @@ header button {
 .collapsible-menu label {
   cursor: pointer;
   padding: 0.7rem 0.7rem 0.7rem 0rem;
-  border: 1px solid red;
 }
 
 .collapsible-menu .label-no-padding {
@@ -255,7 +246,6 @@ header button {
   padding: 1rem 0 1rem 6.2rem;
   transition: 0.4s;
   cursor: pointer;
-  border: 1px solid blue;
 }
 
 .collapsible-menu-content li:hover {
@@ -265,7 +255,6 @@ header button {
 .collapsible-menu-content a {
   text-decoration: none;
   color: darkgrey;
-  border: 1px solid red;
 }
 
 .collapsible-menu-content a:hover {
@@ -289,7 +278,6 @@ input:checked ~ .collapsible-menu-content {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 2rem 0.5rem 2rem;
-  border: 1px solid red;
   transition: 0.4s;
   cursor: pointer;
 }
@@ -302,14 +290,12 @@ input:checked ~ .sidebar-heading .collapsible-menu-icon {
 
 .collapsible-menu .sidebar-heading .sidebar-heading-text {
   width: 100%;
-  border: 1px solid lightblue;
 }
 
 .collapsible-menu .collapsible-menu-icon {
   background: url(../img/menu-down.png) no-repeat center;
   background-size: 1.5rem;
   padding: 1rem;
-  border: 1px solid red;
   transition: 0.4s;
 }
 
@@ -326,7 +312,6 @@ input:checked ~ .collapsible-menu-icon {
   margin: 0rem 2rem 1rem 2rem;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
 }
 
 @media only screen and (max-width: 992px) {
@@ -339,7 +324,6 @@ input:checked ~ .collapsible-menu-icon {
 /* MAIN-BODY-CONTENT-PROFILE */
 
 .main-body-content-profile {
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
 }
@@ -372,7 +356,6 @@ input:checked ~ .collapsible-menu-icon {
 .main-body-content-profile-image-button {
   height: 15%;
   width: 100%;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -385,7 +368,6 @@ input:checked ~ .collapsible-menu-icon {
 }
 
 .main-body-content-profile-info {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -402,7 +384,6 @@ input:checked ~ .collapsible-menu-icon {
 }
 
 .main-body-content-profile-info-update {
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -437,7 +418,6 @@ input:checked ~ .collapsible-menu-icon {
 }
 
 .main-body-content-profile-info-address {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   padding: 1rem 0;
@@ -448,14 +428,12 @@ input:checked ~ .collapsible-menu-icon {
 }
 
 .main-body-content-profile-info-contact {
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   padding: 1rem 0;
 }
 
 .main-body-content-profile-info-contact-item {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -481,21 +459,18 @@ input:checked ~ .collapsible-menu-icon {
 /* MAIN-BODY-CONTENT-EVENTS */
 
 .main-body-content-events {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   margin: 2rem 0;
 }
 
 .main-body-content-event {
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
 }
 
 .main-body-content-event-countdown {
-  border: 1px solid red;
   width: 20%;
   display: flex;
   flex-direction: column;
@@ -515,7 +490,6 @@ input:checked ~ .collapsible-menu-icon {
 }
 
 .main-body-content-event-info {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -529,16 +503,11 @@ input:checked ~ .collapsible-menu-icon {
   }
 }
 
-.main-body-content-event-info-details {
-  border: 1px solid red;
-}
-
 .main-body-content-event-info-details p {
   padding: 0.3rem 0rem;
 }
 
 .main-body-content-event-info-links {
-  border: 1px solid red;
   padding: 1rem 0rem;
 }
 
@@ -547,7 +516,6 @@ input:checked ~ .collapsible-menu-icon {
 }
 
 .main-body-content-event-info-edit {
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -580,7 +548,6 @@ input:checked ~ .collapsible-menu-icon {
 }
 
 .main-body-content-event-info-edit button {
-  border: 1px solid red;
   padding: 0.5rem 2rem;
   background-color: var(--color-darkgreen);
   color: var(--color-background);
@@ -601,7 +568,6 @@ input:checked ~ .collapsible-menu-icon {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 1px solid red;
   border-bottom: 2px solid var(--color-darkblue);
   padding: 1rem;
 }
@@ -617,7 +583,6 @@ input:checked ~ .collapsible-menu-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border: 1px solid red;
   padding: 0.5rem;
   width: 33%;
 }
@@ -644,18 +609,15 @@ input:checked ~ .collapsible-menu-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid red;
 }
 
 .main-body-content-purchases-item-text p {
   padding: 1rem 0;
-  border: 1px solid blue;
 }
 
 .main-body-content-purchases-item-options {
   display: flex;
   flex-direction: row;
-  border: 1px solid red;
 }
 
 .main-body-content-purchases-item-options-item {
@@ -690,7 +652,6 @@ input:checked ~ .collapsible-menu-icon {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid green;
 }
 
 .container-960px-footer img {
@@ -712,10 +673,8 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  border: 1px solid blue;
 }
 
 footer img {
   max-width: 10rem;
-  border: 1px solid red;
 }
