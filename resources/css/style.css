@@ -1,27 +1,33 @@
 /* Colours */
 
-/* Background colour: #f9f9f9 */
-/* Dark Blue: #003479 */
-/* Lightblue: #0d3e80 */
-/* Dark green: #39823c */
-/* Light green: #dff0d8 */
-/* Red: #d43045 */
-
 :root {
+
+  /* Colours */
+
   --color-background: #f9f9f9;
   --color-darkblue: #003479;
   --color-lightblue: #0d3e80;
   --color-darkgreen: #39823c;
   --color-lightgreen: #dff0d8;
   --color-red: #d43045;
+
+  /* Screen Widths for Media Queries - sizes below from Bootstrap */
+  /* TODO: why do these not work with media queries??? */
+
+  --width-phone: 768px;
+  --width-tablet: 992px;
+  /* xs (for phones - screens less than 768px wide) */
+  /* sm (for tablets - screens equal to or greater than 768px wide) */
+  /* md (for small laptops - screens equal to or greater than 992px wide) */
+  /* lg (for laptops and desktops - screens equal to or greater than 1200px wide) */
 }
 
-/* Media Queries - sizes below from Bootstrap */
+/* General Elements */
 
-/* xs (for phones - screens less than 768px wide) */
-/* sm (for tablets - screens equal to or greater than 768px wide) */
-/* md (for small laptops - screens equal to or greater than 992px wide) */
-/* lg (for laptops and desktops - screens equal to or greater than 1200px wide) */
+button {
+  cursor: pointer;
+  font-size: inherit;
+}
 
 /* Font Styles */
 
@@ -40,6 +46,18 @@ html {
   font-family: 'VisbyCF', Arial, sans-serif;
   font-size: 10px;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container-960px {
+    flex-direction: column;
+  }
 }
 
 a {
@@ -75,6 +93,12 @@ b { font-weight: 700; }
   border: 1px solid green;
 }
 
+@media only screen and (max-width: 992px) {
+  .container-960px {
+    flex-direction: column;
+  }
+}
+
 .container-960px-header {
   width: 960px;
   margin: 0 auto;
@@ -82,6 +106,7 @@ b { font-weight: 700; }
   justify-content: space-between;
   align-items: center;
   border: 1px solid green;
+  background-color: var(--color-background);
 }
 
 .container-sidebar {
@@ -122,6 +147,7 @@ header .header-item {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -130,6 +156,7 @@ header .header-item-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding-left: 0.5rem;
 }
 
 header button {
@@ -157,7 +184,7 @@ header button {
 
 .main-body-sidebar {
   width: 33%;
-  margin-right: 2rem;
+  margin: 0rem 2rem;
 
   border: 1px solid red;
   border-bottom: 1px solid grey;
@@ -165,7 +192,9 @@ header button {
 }
 
 @media only screen and (max-width: 992px) {
-  .main-body-sidebar { display: none; }
+  .main-body-sidebar {
+    width: auto;
+  }
 }
 
 .main-body-sidebar button {
@@ -269,9 +298,6 @@ input:checked ~ .collapsible-menu-content {
 
 /* COLLAPSIBLE-MENU-HEADING-END */
 
-/* COLLAPSIBLE-MENU-ITEMS-START */
-/* COLLAPSIBLE-MENU-ITEMS-END */
-
 input:checked ~ .sidebar-heading .collapsible-menu-icon {
   transform: rotate(180deg);
 }
@@ -299,10 +325,17 @@ input:checked ~ .collapsible-menu-icon {
 
 .main-body-content {
   width: 67%;
-  margin-left: 2rem;
+  margin: 0rem 2rem 1rem 2rem;
   display: flex;
   flex-direction: column;
   border: 1px solid red;
+}
+
+@media only screen and (max-width: 992px) {
+  .main-body-content {
+    width: auto;
+    margin-top: 2rem;
+  }
 }
 
 /* MAIN-BODY-CONTENT-PROFILE */
@@ -351,8 +384,16 @@ input:checked ~ .collapsible-menu-icon {
   border: 1px solid red;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   width: 75%;
   margin-top: 3.8rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .main-body-content-profile-info {
+    margin-top: 0rem;
+    padding: 1rem 0rem 1rem 0.5rem;
+  }
 }
 
 .main-body-content-profile-info-update {
@@ -362,6 +403,12 @@ input:checked ~ .collapsible-menu-icon {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .main-body-content-profile-info-update p {
+    color: black;
+  }
 }
 
 .main-body-content-profile-info-update button {
@@ -548,6 +595,15 @@ input:checked ~ .collapsible-menu-icon {
 }
 
 /* FOOTER */
+
+.container-960px-footer {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid green;
+}
 
 footer {
   display: flex;
