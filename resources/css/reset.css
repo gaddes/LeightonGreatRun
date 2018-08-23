@@ -51,5 +51,9 @@ table {
 
 button {
 	border: 0px;
-	background-color: inherit;
+	background-color: inherit; /* Override user agent stylesheet */
+}
+
+select {
+	border-radius: 0; /* Override user agent stylesheet */
 }

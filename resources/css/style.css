@@ -7,6 +7,7 @@
   --color-background: #f9f9f9;
   --color-darkblue: #003479;
   --color-lightblue: #0d3e80;
+  --color-lightblue-transparency20: rgba(13, 62, 128, 0.2);
   --color-darkgreen: #39823c;
   --color-lightgreen: #dff0d8;
   --color-red: #d43045;
@@ -219,7 +220,7 @@ header button {
 /* MAIN-CONTAINER */
 
 .main-banner {
-  background-color: var(--color-darkblue);
+  background: url(../img/hero-background.jpg) no-repeat center;
   height: 12rem;
   position: relative;
 }
@@ -275,6 +276,7 @@ header button {
 
 .sidebar-heading-icon {
   padding-right: 1rem;
+  cursor: pointer;
 }
 
 /* COLLAPSIBLE-MENU-HEADING-START */
@@ -533,12 +535,12 @@ input:checked ~ .sidebar-heading .collapsible-menu-icon {
 }
 
 .main-body-content-event-countdown {
-  width: 13rem;
+  width: 12rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--color-darkblue);
-  padding: 3rem 0;
+  padding: 2.5rem 0;
 }
 
 @media only screen and (max-width: 992px) {
@@ -658,6 +660,13 @@ input:checked ~ .sidebar-heading .collapsible-menu-icon {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .main-body-content-purchases-item {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
 .main-body-content-purchases-item img {
   width: 100%;
 }
@@ -682,15 +691,23 @@ input:checked ~ .sidebar-heading .collapsible-menu-icon {
 .main-body-content-purchases-item-options {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .main-body-content-purchases-item-options-item {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 0.3rem;
+  width: 48%;
+  padding: 0.7rem 0.5rem;
   border: 2px solid lightgrey;
-  margin-right: 1rem;
+  cursor: pointer;
+  font: inherit;
+
+  -webkit-appearance: none; /* Remove original arrows */
+  background: url(../img/menu-down.png) no-repeat; /* Set new arrow style */
+  background-size: 10%;
+  background-position: 90% 50%; /* Position background image 90% from left, 50% from top (i.e. centered) */
 }
 
 .main-body-content-purchases-item-purchase {
@@ -706,6 +723,11 @@ input:checked ~ .sidebar-heading .collapsible-menu-icon {
   border: 2px solid var(--color-lightblue);
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
+  transition: 0.4s;
+}
+
+.main-body-content-purchases-item-purchase button:hover {
+  background-color: var(--color-lightblue-transparency20);
 }
 
 /* FOOTER */
@@ -714,7 +736,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-darkblue);
+  background: url(../img/hero-background.jpg) no-repeat center;
   border-top: 1px solid lightgrey;
 
   z-index: 10;
