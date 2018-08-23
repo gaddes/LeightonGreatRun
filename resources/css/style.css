@@ -52,6 +52,7 @@ html {
   font-family: 'VisbyCF', Arial, sans-serif;
   font-size: 10px;
   font-weight: 300;
+  background-color: var(--color-background);
 }
 
 @media only screen and (max-width: 992px) {
@@ -103,7 +104,7 @@ header {
   border-bottom: 1px solid lightgrey;
 
   position: fixed;
-  z-index: 5;
+  z-index: 10;
   max-width: inherit;
   height: 4rem;
   margin: 0 auto;
@@ -201,9 +202,8 @@ header button {
 
 .main-banner {
   background-color: var(--color-darkblue);
-  height: 8rem;
-  margin-top: 4rem;
-  z-index: 2;
+  height: 12rem;
+  position: relative;
 }
 
 .main-body {
@@ -276,6 +276,7 @@ header button {
 .collapsible-menu-content {
   max-height: 0; /* Menu hidden by default */
   overflow: hidden;
+  background-color: white;
 }
 
 .collapsible-menu-content li {
@@ -697,10 +698,10 @@ footer {
   background-color: var(--color-darkblue);
   border-top: 1px solid lightgrey;
 
-  z-index: 5;
+  z-index: 10;
   max-width: inherit;
   height: 4rem;
-  margin: 0 auto;
+  position: relative;
   padding-bottom: 2rem;
   bottom: 0;
   left: 0;
