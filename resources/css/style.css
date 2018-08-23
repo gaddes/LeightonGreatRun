@@ -227,6 +227,7 @@ header button {
 
 .main-body-sidebar button {
   width: 100%;
+  background-color: white;
 }
 
 .sidebar-heading {
