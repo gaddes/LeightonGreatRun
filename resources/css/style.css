@@ -172,6 +172,7 @@ header .header-item-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: flex-start;
   padding-left: 0.5rem;
 }
 
@@ -204,7 +205,7 @@ header .header-item-text-tablet {
   }
 }
 
-header button {
+header button.header-item-logout {
   margin-left: 1rem;
   padding: 0.7rem 2.5rem;
   background-color: var(--color-red);

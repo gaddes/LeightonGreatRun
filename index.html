@@ -22,26 +22,24 @@
         <img src="./resources/img/logo.svg" alt="The Great Run Company logo.">
         <div class="header-items">
           <!-- TODO: styling has gone wild since adding 'a' tag - fix this! -->
-          <div class="header-item" role="button" aria-label="your account">
+          <button class="header-item" role="button" aria-label="your account">
             <i class="material-icons">person</i>
             <div class="header-item-text">
               <p class="header-item-text-desktop">Hello, Steve</p>
               <p class="header-item-text-desktop bold">Your account</p>
               <p class="header-item-text-tablet bold">Account</p>
             </div>
-          </div>
+          </button>
 
-          <a href="#" role="button" aria-label="your basket">
-            <div class="header-item">
-              <i class="material-icons">shopping_cart</i>
-              <div class="header-item-text">
-                <p class="header-item-text-desktop">£0</p>
-                <p class="header-item-text-desktop bold">Your basket</p>
-                <p class="header-item-text-tablet bold">Basket</p>
-              </div>
-            </a>
-          </div>
-          <button>Logout</button>
+          <button class="header-item" aria-label="your basket">
+            <i class="material-icons">shopping_cart</i>
+            <div class="header-item-text">
+              <p class="header-item-text-desktop">£0</p>
+              <p class="header-item-text-desktop bold">Your basket</p>
+              <p class="header-item-text-tablet bold">Basket</p>
+            </div>
+          </button>
+          <button class="header-item-logout">Logout</button>
         </div>
       </div>
     </header>
