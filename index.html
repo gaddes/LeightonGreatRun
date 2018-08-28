@@ -18,10 +18,8 @@
 
     <header>
       <div class="container-960px-header">
-        <!-- TODO: issue with voiceover not recognising svg? https://stackoverflow.com/questions/30399511/how-to-make-voiceover-acknowledge-link-with-svg-inside-it -->
         <img src="./resources/img/logo.svg" alt="The Great Run Company logo.">
         <div class="header-items">
-          <!-- TODO: styling has gone wild since adding 'a' tag - fix this! -->
           <button class="header-item" aria-label="your account">
             <i class="material-icons">person</i>
             <div class="header-item-text">
@@ -75,6 +73,7 @@
               </div>
               <label class="collapsible-menu-icon" for="menu" aria-hidden="true"></label>
             </button>
+            <!-- NOTE: VoiceOver reads out list items even when dropdown is collapsed. We could resolve this by adding/removing aria-expanded="true" with JavaScript. This should be done for every dropdown item in the sidebar. -->
             <div class="collapsible-menu-content">
               <ul>
                 <li><a href="#">Dashboard</a></li>
